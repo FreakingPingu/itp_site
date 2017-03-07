@@ -1,13 +1,14 @@
 /* Below is used for the navigation bar */
 ul {
     overflow: hidden;
-    background-color: black;
+    background-color: #55595c;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 li {
+	border-right: 2px solid #36393e;
     float: left;
 }
 
