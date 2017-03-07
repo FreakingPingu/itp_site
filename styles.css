@@ -1,3 +1,27 @@
+/* Below is used for the navigation bar */
+ul {
+    overflow: hidden;
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 18pt;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+
+/* Background color */
 body {
     background: #36393e;
     background: linear-gradient(to right, #36393e 0%, #36393e 19%, #6d2f61 20%, #6d2f61 80%, #36393e 81%, #36393e 100%);
