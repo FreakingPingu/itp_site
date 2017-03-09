@@ -32,3 +32,33 @@ body {
     background: linear-gradient(to right, #36393e 0%, #36393e 19%, #6d2f61 20%, #6d2f61 80%, #36393e 81%, #36393e 100%);
     font-family: Century, Helvetica, Arial
 }
+
+
+/* dropdown content */
+.dropdwon {
+	postiton: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #55595c;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #55595c
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
