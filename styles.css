@@ -20,7 +20,7 @@ li a { /* Links are white without underlining in nav bar */
     text-decoration: none;
 }
 
-li#image {
+li#image { /* Image blends in with the background */
     padding: 4px 20px;
     border-bottom: 0px;
     line-height: 0px;
@@ -30,13 +30,13 @@ li#image {
 
 /* Background color */
 body {
-    background: #36393e;
+    background: #36393e; /*Alternative color scheme */
     background: linear-gradient(to right, #36393e 0%, #36393e 19%, #6d2f61 20%, #6d2f61 80%, #36393e 81%, #36393e 100%);
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 
-/* dropdown content */
+/* Dropdown content */
 .dropdown {
 	display: inline-block;
 }
