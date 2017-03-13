@@ -77,23 +77,54 @@ body {
 	margin-top: 5%;
 }
 
-#container-left{
+.container-left{
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
 	float: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 200%;
+	line-height: 200px;
+	vertical-align: middle;
+	text-decoration: none;
 }
 
-#container-mid{
+.container-mid{
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
 	margin: auto;
+	text-align: center;
+	font-size: 200%;
+	line-height: 200px;
+	vertical-align: middle;
+	text-decoration: none;
 }
 
-#container-right{
+.container-right{
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
 	float: right;
+	text-align: center;
+	font-size: 200%;
+	line-height: 200px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.container-right a{
+	text-decoration: none;
+	color: black;
+}
+
+.container-mid a{
+	text-decoration: none;
+	color: black;
+}
+
+.container-left a{
+	text-decoration: none;
+	color: black;
 }
