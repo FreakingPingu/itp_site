@@ -38,25 +38,23 @@ body {
 
 /* dropdown content */
 .dropdown {
-	postiton: relative;
 	display: inline-block;
 }
 
 .dropdown-content {
-	font-family: century, helvetica, arial;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-	margin-top: 82px
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.6);
+	margin-top: 3.7%;
+    margin-left: 2.3%;
+    text-decoration: none;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 1em 1.6em;
     text-decoration: none;
     display: block;
 }
