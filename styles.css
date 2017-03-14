@@ -78,6 +78,7 @@ body {
 }
 
 .container-left{
+  display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
@@ -85,56 +86,52 @@ body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: 200%;
-	line-height: 200px;
-	vertical-align: middle;
+	line-height: 100px;
 	text-decoration: none;
 }
 
 .container-mid{
+  display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
 	margin: auto;
 	text-align: center;
 	font-size: 200%;
-	line-height: 200px;
-	vertical-align: middle;
+	line-height: 100px;
 	text-decoration: none;
 }
 
 .container-right{
+  display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
 	float: right;
 	text-align: center;
 	font-size: 200%;
-	line-height: 200px;
-	vertical-align: middle;
 	text-decoration: none;
-}
-
-.container-right a{
-	text-decoration: none;
-	color: black;
-}
-
-.container-left a{
-	text-decoration: none;
-	color: black;
-}
-
-.container-mid a{
-	text-decoration: none;
-	color: black;
+  line-height: 100px
 }
 
 /*photos page select year */
-.container-right-hover a:hover{
-  background-color: #55595c;
-  color: #c3c3c3
+.container-content{
+  display: none;
 }
 
-.container-right-hover:hover .container-right-hover{
-  display: right;
+.container-content a:hover{
+  background-color: #55595c;
+  color: c3c3c3;
+}
+
+.container-right:hover .container-content{
+  display: block;
+}
+
+.container-left:hover .container-content{
+  display: block;
+}
+
+.container-mid:hover .container-content{
+  display: block;
 }
