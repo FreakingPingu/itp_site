@@ -90,7 +90,7 @@ th, td {vertical-align: top;}
 /* align (center) */
 table {
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: .5%;
     margin-right: auto;
     margin-bottom: 10%;
 }
