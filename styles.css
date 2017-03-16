@@ -75,10 +75,11 @@ body {
 	height: 200px;
 	margin: auto;
 	margin-top: 5%;
+	background-color: black;
 }
 
 .container-left{
-  display: block;
+  	display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
@@ -86,7 +87,7 @@ body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: 200%;
-	line-height: 100px;
+	line-height: 70px;
 	text-decoration: none;
 }
 
@@ -98,7 +99,7 @@ body {
 	margin: auto;
 	text-align: center;
 	font-size: 200%;
-	line-height: 100px;
+	line-height: 70px;
 	text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ body {
 	text-align: center;
 	font-size: 200%;
 	text-decoration: none;
-    line-height: 100px
+    line-height: 70px;
 }
 
 
