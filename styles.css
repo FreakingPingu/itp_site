@@ -69,7 +69,7 @@ body {
 }
 
 
-/* block array for general use */
+/* Block array for general use */
 .container{
 	width: 900px;
 	height: 200px;
@@ -91,7 +91,7 @@ body {
 }
 
 .container-mid{
-  display: block;
+    display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
@@ -103,7 +103,7 @@ body {
 }
 
 .container-right{
-  display: block;
+    display: block;
 	width: 200px;
 	height: 200px;
 	background-color: #c3c3c3;
@@ -111,25 +111,26 @@ body {
 	text-align: center;
 	font-size: 200%;
 	text-decoration: none;
-  line-height: 100px
+    line-height: 100px
 }
 
-/*photos page select year */
+
+/* Photos page select year */
 .container-content{
-  display: none;
+    display: none;
 }
 
 .container-content a:hover{
-  background-color: #55595c;
-  color: c3c3c3;
+    background-color: #55595c;
+    color: c3c3c3;
 }
 
 .container-right:hover .container-content{
-  display: block;
+    display: block;
 }
 
 .container-left:hover .container-content{
-  display: block;
+    display: block;
 }
 
 .container-mid:hover .container-content{
