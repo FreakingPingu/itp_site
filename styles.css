@@ -1,6 +1,6 @@
 /* Navigation bar */
 ul {
-    overflow: hidden;
+    overflow: visible;
     background-color: #55595c;
     list-style-type: none;
     margin: 0;
@@ -21,7 +21,7 @@ li a { /* Links are white without underlining in nav bar */
 }
 
 li#image { /* Image blends in with the background */
-    padding: 4px 20px;
+    padding: 5px 20px;
     border-bottom: 0px;
     line-height: 0px;
     background-color: #35393e;
