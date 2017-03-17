@@ -69,9 +69,9 @@ body {
 }
 
 
-/* Table style for photos */
+/* Table style for general use */
 /* cellpadding */
-th, td {
+tr td {
     padding-left: 30px;
     padding-top: 10px;
     padding-right: 30px;
@@ -100,6 +100,15 @@ table {
     margin-top: .5%;
     margin-right: auto;
     margin-bottom: 10%;
+}
+
+/* hover menu show, used for photos. */
+table tr td a{
+	display: none;
+}
+
+table tr:hover td a{
+    display: inline;
 }
 
 /* Modified table style for chapters & textbooks */
