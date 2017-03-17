@@ -71,7 +71,7 @@ body {
 
 /* Table style for photos */
 /* cellpadding */
-th, td {
+tr td {
     padding-left: 30px;
     padding-top: 10px;
     padding-right: 30px;
@@ -100,4 +100,13 @@ table {
     margin-top: .5%;
     margin-right: auto;
     margin-bottom: 10%;
+}
+
+/* hover menu show*/
+table tr td a{
+	display: none;
+}
+
+table tr:hover #right a{
+	display: inline;
 }
