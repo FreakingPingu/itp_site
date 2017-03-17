@@ -103,11 +103,11 @@ table {
 }
 
 /* hover menu show, used for photos. */
-table tr td a{
+table tr td a.juniorOrSenior{
 	display: none;
 }
 
-table tr:hover td a{
+table tr:hover td a.juniorOrSenior{
     display: inline;
 }
 
