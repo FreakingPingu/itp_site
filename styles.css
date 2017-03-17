@@ -107,6 +107,6 @@ table tr td a{
 	display: none;
 }
 
-table tr:hover #right a{
+table tr:hover td a{
 	display: inline;
 }
