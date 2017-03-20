@@ -88,8 +88,8 @@ td a {
 	text-align: center;
 }
 
-table {border-collapse: separate; border-spacing: 100px;} /* cellspacing="5" */
-table {border-collapse: separate; border-spacing: 100px;}   /* cellspacing="0" */
+table {border-collapse: separate; border-spacing: 100px;} /* cellspacing */
+table {border-collapse: separate; border-spacing: 100px;}   /* cellspacing */
 
 /* valign */
 th, td {vertical-align: top;}
