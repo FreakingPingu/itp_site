@@ -20,7 +20,7 @@ li a { /* Links are white without underlining in nav bar */
     text-decoration: none;
 }
 
-li#image { /* Image blends in with the background */
+li#image { /* Logo blends in with the background */
     padding: 5px 20px;
     border-bottom: 0px;
     line-height: 0px;
