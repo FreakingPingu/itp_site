@@ -104,11 +104,13 @@ table {
 
 /* hover menu show, used for photos. */
 table tr td a.juniorOrSenior{
-	display: none;
+	color: #c3c3c3;
+	text-decoration: none;
 }
 
-table tr:hover td a.juniorOrSenior{
-    display: inline;
+table tr td:hover a.juniorOrSenior{
+	color: black;
+	text-decoration: underline;
 }
 
 /* Modified table style for chapters & textbooks */
