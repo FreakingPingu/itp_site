@@ -3,8 +3,9 @@ ul {
     overflow: visible;
     background-color: #55595c;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 5em;
+	margin-top: 0em;
+    padding: 0em;
 }
 
 li {
@@ -118,4 +119,11 @@ td.chapter {
     vertical-align: middle;
     min-width: 200px;
     max-width: 200px;
+}
+
+/* calendar test*/
+
+.calendar {
+	text-align: center;
+	margin-top: 5em;
 }
