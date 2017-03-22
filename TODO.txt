@@ -7,3 +7,5 @@ Design "About Us" page
 Design "FAQ" page
 
 Main page scrolling pictures (think Mayfield homepage)
+
+PHP code should not allow the user to send multiple emails.
