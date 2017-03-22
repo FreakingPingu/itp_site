@@ -122,8 +122,24 @@ td.chapter {
 }
 
 /* calendar test*/
-
 .calendar {
 	text-align: center;
 	margin-top: 5em;
+}
+
+/* qna list items */
+ol {
+	text-align: left;
+}
+
+.question {
+	max-width: 30em;
+	margin-left: 22%;
+	float: none
+}
+
+.answer {
+	width: 50%;
+	margin-left: 25%;
+	float: none;
 }
