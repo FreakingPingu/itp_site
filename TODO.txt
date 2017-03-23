@@ -4,8 +4,8 @@ Test contact.php form to see if it successfully sends the form as an email.
 
 Design "About Us" page
 
-Design "FAQ" page
-
 Main page scrolling pictures (think Mayfield homepage)
 
 PHP code should not allow the user to send multiple emails.
+
+Find a better way to create line breaks in FAQ.
