@@ -9,9 +9,9 @@ if($_POST["submit"]) {
 
     $mailBody="Name: $senderFirst $senderLast\nEmail: $senderEmail\n\n$message"; // Creates the message itself, with newline characters
 
-    mail("masterricky3333@gmail.com", "Form to email message", $mailBody, "From: itp.info.request@excellitp.address"); // Sends it to master..., appearings to come from itp.info...
+    mail($recipient, $subject, $mailBody, "From: itp.info.request@excellitp.com"); // Sends it to master..., appearings to come from itp.info...
 
-    $confirmedSent="<p> Your request was received. Please allow several days for a response. </p>" // New paragraph appears under submit button telling user it was received.
+    $confirmedSent="<p> Your request was received. Please allow several days for a response. </p>"; // New paragraph appears under submit button telling user it was received.
 }
 ?>
 
@@ -66,13 +66,13 @@ if($_POST["submit"]) {
             </div>
         </ul>
 
-        <form method="post" action="contact.php"> <!-- User submitted form for an information request. Calls the PHP code at the start of the file. -->
+        <form name="form" action="contact.php" method="post" > <!-- User submitted form for an information request. Calls the PHP code at the start of the file. -->
             <h1> Request for Information </h1>
-            <label> First Name: <input type="text" name="SenderFirstName" /></label>
-            <label> Last Name: <input type="text" name="SenderLastName" /></label>
-            <label> Email:     <input type="text" name="SenderEmail" /></label>
+            <label> First Name:<input type="text" name="SenderFirstName" /></label>
+            <label> Last Name:<input type="text" name="SenderLastName" /></label>
+            <label> Email:<input type="text" name="SenderEmail" /></label>
             <textarea name="SenderInfoReason" rows="7" cols="60"></textarea>
-            <input type="submit" />
+            <input type="submit" name="submit"/>
             <?=confirmedSent ?> <!-- Hidden paragraph that will appear when the user submits the form, using PHP code at start of file -->
         </form>
 

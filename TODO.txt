@@ -9,3 +9,6 @@ Main page scrolling pictures (think Mayfield homepage)
 PHP code should not allow the user to send multiple emails.
 
 Find a better way to create line breaks in FAQ.
+
+Send email from a localhost server
+	(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
