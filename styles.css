@@ -44,8 +44,8 @@ li { /* Hide old nav bar elements so menu appears */
 }
 
 .menu { /* Menu class */
-	display: block;
-	float: right; /* Appears on right side of nav bar */
+	display: inline-block;
+	float: left; /* Appears on right side of nav bar */
 	margin: .5em;
 }
 
@@ -54,6 +54,10 @@ li a { /* Links are white without underlining in nav bar */
     color: white;
 	font-size: 3.3em;
     text-decoration: none;
+}
+
+.menu:hover .dropdown-content {
+	display: block;
 }
 } /* End of <=1650 nav bar */
 
