@@ -1,6 +1,6 @@
 /* Navigation bar */
 ul {
-    overflow: visible;
+    overflow: hidden;
     background-color: #55595c;
     list-style-type: none;
     margin-bottom: 5em;
@@ -14,6 +14,7 @@ li {
 	font-size: 2em;
     color: white;
     padding: 20px 45px;
+	clear: right;
 }
 
 li a { /* Links are white without underlining in nav bar */
@@ -21,11 +22,11 @@ li a { /* Links are white without underlining in nav bar */
     text-decoration: none;
 }
 
-li#image { /* Logo blends in with the background */
-    padding: 5px 20px;
-    border-bottom: 0px;
-    line-height: 0px;
-    background-color: #35393e;
+.image { /* Logo blends in with the background */
+    float: left;
+	margin-top: 0em;
+	margin-left: 0em;
+	margin-right: 1%;
 }
 
 
@@ -49,7 +50,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.6);
 	margin-top: 3.7%;
-    margin-left: 2.3%;
+    margin-left: 2.2%;
     text-decoration: none;
 }
 
@@ -125,6 +126,7 @@ td.chapter {
 .calendar {
 	text-align: center;
 	margin-top: 5em;
+	min-width: 1000px;
 }
 
 /* qna list items */
