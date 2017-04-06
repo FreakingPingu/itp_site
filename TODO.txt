@@ -16,3 +16,5 @@ Send email from a localhost server
 Update contact.html links to contact.php
 
 Responsive design with google calendar. (Mobile version for mobile devices)
+
+Build .menu class dropdown (nav bar for <1920x1080)

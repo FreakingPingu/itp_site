@@ -1,4 +1,5 @@
-/* Navigation bar */
+/* Navigation bar for 1920x1080 displays */
+@media only screen and (min-width: 1651px) {
 ul {
     overflow: hidden;
     background-color: #55595c;
@@ -21,6 +22,40 @@ li a { /* Links are white without underlining in nav bar */
     color: white;
     text-decoration: none;
 }
+
+.menu {
+	display: none;
+}
+} /* End of >=1920 nav bar */
+
+/* Navigation bar for anything smaller than 1920x1080 */
+@media only screen and (max-width: 1650px) {
+ul {
+    overflow: hidden;
+    background-color: #55595c;
+    list-style-type: none;
+    margin-bottom: 5em;
+	margin-top: 0em;
+    padding: 0em;
+}
+
+li { /* Hide old nav bar elements so menu appears */
+    display: none;
+}
+
+.menu { /* Menu class */
+	display: block;
+	float: right; /* Appears on right side of nav bar */
+	margin: .5em;
+}
+
+li a { /* Links are white without underlining in nav bar */
+	line-height: 65px;
+    color: white;
+	font-size: 3.3em;
+    text-decoration: none;
+}
+} /* End of <=1650 nav bar */
 
 .image { /* Logo blends in with the background */
     float: left;
