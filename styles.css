@@ -90,8 +90,8 @@ td a {
 	text-align: center;
 }
 
-table {border-collapse: separate; border-spacing: 100px;} /* cellspacing */
-table {border-collapse: separate; border-spacing: 100px;}   /* cellspacing */
+table {border-collapse: separate; border-spacing: 6.66em;} /* cellspacing */
+table {border-collapse: separate; border-spacing: 6.66em;}   /* cellspacing */
 
 /* valign */
 th, td {vertical-align: top;}
@@ -144,4 +144,38 @@ ol {
 	width: 50%;
 	margin-left: 25%;
 	float: none;
+	border:
+}
+
+/*the about us page*/
+#leftside{
+	border: medium black solid;
+	background-color: #c3c3c3;
+	width: 48%;
+	float: left;
+	margin: .1%;
+}
+
+#rightside{
+	border: medium black solid;
+	background-color: #c3c3c3;
+	width: 48%;
+	float: right;
+	margin: .1%;
+}
+
+#title{
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#description{
+	font-size: 1.1em;
+	background-color: #c3c3c3;
+	line-height: 2em;
+}
+
+.highlightme{
+	background-color: #c3c3c3;
 }
