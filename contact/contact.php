@@ -42,8 +42,11 @@ if($_POST["submit"]) {
 
     <body>
 
+		<div class = image>
+        	<img src = "assets/ITP_LOGO.png" alt = "ITP logo" height = "81" width = "144">
+        </div>
+
         <ul> <!-- Nav bar menu -->
-            <li id="image"><a href = "index.html"> <img src = "../assets/ITP_LOGO.png" alt = "ITP logo" height = "74" width = "148"> </a></li>
             <li><a href = "../index.html"> Home </a></li>
             <li><a href = "../senior/senior.html"> Senior </a></li>
             <li><a href = "../junior/junior.html"> Junior </a></li>
@@ -64,6 +67,21 @@ if($_POST["submit"]) {
                     <a href = "#" target = "_blank"> College Credit & Scholaarships </a>
                 </div>
             </div>
+			<li class = "menu">
+            	<a href="#menu"> &#9776;</a>
+                <div class = "dropdown-content">
+                	<a href = "../index.html"> Home </a>
+                    <a href = "../senior/senior.html"> Senior </a>
+                    <a href = "../junior/junior.html"> Junior </a>
+                    <a href = "../photos/photos.html"> Photos </a>
+                    <a href = "../faq/faq.html"> FAQ </a>
+                    <a href = "../faq/faq.html"> Recruitment Information </a>
+                    <a href = "../about/about.html"> About Us </a>
+                    <a href = "../contact/contact.html"> Contact Us </a>
+                    <a href = "http://www.skillsusa.org/" target = "_blank"> Skills USA </a>
+                    <a href = "#" target = "_blank"> College Credit & Scholaarships </a>
+                </div>
+            </li>
         </ul>
 
         <form name="form" action="contact.php" method="post" > <!-- User submitted form for an information request. Calls the PHP code at the start of the file. -->
