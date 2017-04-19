@@ -11,7 +11,7 @@ Find a better way to create line breaks in FAQ.
 Send email from a localhost server
 	(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
 
-Update contact.html links to contact.php
+Update contact.php links to contact.php
 
 Responsive design with google calendar. (Mobile version for mobile devices)
 
