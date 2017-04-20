@@ -1,18 +1,21 @@
 Last Updated 3/22 @ 8:00
 
 Test contact.php form to see if it successfully sends the form as an email.
+	PHP code should not allow the user to send multiple emails.
+	Send email from a localhost server
+		(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
 
 Main page scrolling pictures (think Mayfield homepage)
 
-PHP code should not allow the user to send multiple emails.
-
 Find a better way to create line breaks in FAQ.
-
-Send email from a localhost server
-	(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
-
-Update contact.php links to contact.php
 
 Responsive design with google calendar. (Mobile version for mobile devices)
 
-Build .menu class dropdown (nav bar for <1920x1080)
+Improve mobile formatting
+	Larger text on mobile
+
+Replace joke placeholder text with "official" placeholder text
+	Lorem ipsum generators
+
+Mess around with external & internal style sheets
+	If the properties only apply to one page, it should be internal
