@@ -27,7 +27,7 @@ div div a { /* Links are white without underlining in nav bar */
     color: #000000;
 }
 
-.menu {
+.menu { /* Dropdown menu hidden if screen can fit the full-size navbar. */
 	display: none;
 }
 } /* End of >=1920 nav bar */
@@ -161,12 +161,14 @@ table tr td:hover a.juniorOrSenior{
 	text-decoration: underline;
 }
 
+
 /* Modified table style for chapters & textbooks */
 td.chapter {
     vertical-align: middle;
     min-width: 200px;
     max-width: 200px;
 }
+
 
 /* calendar test*/
 .calendar {
@@ -176,6 +178,7 @@ td.chapter {
 	margin-top: 5em;
 	min-width: 1000px;
 }
+
 
 /* qna list items */
 ol {
@@ -195,6 +198,7 @@ ol {
 	border:
 }
 
+
 /*the about us page*/
 .leftside{
 	border: medium black solid;
@@ -204,7 +208,7 @@ ol {
 	margin: .1%;
 }
 
-.middle { /* also being used for footer */
+.middle { /* also being used for footer. Line 263 (.middle p) is used b/c styling on about us broke the footer. TODO Condense seperate rules and make more logical */
 	height: 95%;
 	border: medium black solid;
 	background-color: #c3c3c3;
@@ -241,8 +245,9 @@ ol {
 	background-color: #c3c3c3;
 }
 
+
 /* the footer for the different pages */
-.footer{
+.footer {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -257,4 +262,8 @@ ol {
 
 .middle img{
 	float: left;
+}
+
+.middle p{
+	padding: .1%;
 }

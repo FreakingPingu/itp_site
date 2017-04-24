@@ -19,3 +19,5 @@ Replace joke placeholder text with "official" placeholder text
 
 Mess around with external & internal style sheets
 	If the properties only apply to one page, it should be internal
+
+Consider adding borders on all boxes. (How it is on the about us page)
