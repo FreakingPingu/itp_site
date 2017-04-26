@@ -7,6 +7,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> ITP Home</title>
         <link href="styles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+			body{
+				padding: .1%;
+				position: relative;
+			}
+		</style>
+        
+         
+        
+        <script>
+			function change() {
+    			var i;
+   				var x = document.getElementsById("slide");
+				
+    			for (i = 0; i < x.length; i++) {
+       				x[i].style.display = "block";
+    			}
+				
+    			setTimeout(change, 3000); // Change image every 5 seconds
+			}
+			
+			window.onload = change;
+		</script>
 
     </head>
 
@@ -66,15 +90,22 @@
         <div class = "calendar">
         	<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=b6nj7ov1rphqqjpugn04vgobm8%40group.calendar.google.com&amp;color=%23522					9A3&amp;ctz=America%2FNew_York" style="border-width:0" width="50%" height="700em" frameborder="0" scrolling="no"></iframe>
 		</div>
+        
+    	<img id = "slide" src = "assets/slideshow/filler1.jpg">
+        <img id = "slide" src = "assets/slideshow/filler2.jpg">
+        <img id = "slide" src = "assets/slideshow/filler3.jpg">
+        <img id = "slide" src = "assets/slideshow/filler4.jpg">
+        <img id = "slide" src = "assets/slideshow/filler5.gif">
 
-	<div class = "footer">
-    	<div class = "middle">
+		<div class = "footer">
+    		<div class = "middle">
         	<img src = "assets/suchy_photo.jpg" alt = "Mr. Suchy" height = "105" width = "78">
         	<p> Ron Suchy </p>
             <p> Program Instructor </p>
             <a href = "contact/contact.php"> Contact Info </a>
         </div>
     </div>
+
     </body>
 
 </html>

@@ -19,3 +19,5 @@ Replace joke placeholder text with "official" placeholder text
 
 Mess around with external & internal style sheets
 	If the properties only apply to one page, it should be internal
+
+put place holders in photo gallery. sorry ricky i will not capitalize the first words. nEVER.

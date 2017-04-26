@@ -170,6 +170,7 @@ td.chapter {
 
 /* calendar test*/
 .calendar {
+	float: right;
 	margin-left: 0em;
 	margin-right: 0em;
 	text-align: center;
@@ -257,4 +258,19 @@ ol {
 
 .middle img{
 	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+#slide {
+    position: absolute;
+	display: none;
 }
