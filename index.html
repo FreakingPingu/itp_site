@@ -7,30 +7,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> ITP Home</title>
         <link href="styles.css" rel="stylesheet" type="text/css" />
-        
+
         <style>
-			.footer {
-				bottom: 0;
+			.footer { /* Bandaid fix for footer not properly going to the bottom of the page. */
+				position: relative;
 			}
-			
+
 			#slidecontainer {
 				width: 100%;
 				height: 50%;
 				margin-bottom: 6em;
 			}
 		</style>
-        
+
        <!-- <script>
 			var index = 0;
 			var n = 1;
 			var images = [];
-			
+
 			images[0] = "assets/slideshow/filler1.jpg";
 			images[1] = "assets/slideshow/filler2.jpg";
-			images[2] = "assets/slideshow/filler3.jpg";
+			images[2] = "assets/slideshow/filler3.png";
 			images[3] = "assets/slideshow/filler4.jpg";
 			images[4] = "assets/slideshow/filler5.gif";
-			
+
 			function slideShow(n){
 				if(index > images.length - 1) {
 					index = 0;
@@ -38,11 +38,11 @@
 				if(n < 0){
 					i = images.lenght - 1;
 				}
-				
+
 				document.getElementById("slideshow").src = images[index];
 				setTimeout("slideShow(index += 1)", 2000);
 			}
-			
+
 			window.onload = slideShow;
 		</script>
         -->
@@ -92,11 +92,11 @@
                 </div>
             </li>
         </ul>
-		
+
         <div id = "slidecontainer">
         	<img id = "slideshow" src = "assets/slideshow/filler1.jpg" alt = "filler">
         </div>
-        
+
         <!--
         	1) create google calendar
         	2) go to that calendar's settings
