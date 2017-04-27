@@ -267,3 +267,9 @@ ol {
 .middle p{
 	padding: .1%;
 }
+
+#slideshow {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}

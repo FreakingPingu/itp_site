@@ -14,10 +14,7 @@ Responsive design with google calendar. (Mobile version for mobile devices)
 Improve mobile formatting
 	Larger text on mobile
 
-Replace joke placeholder text with "official" placeholder text
-	Lorem ipsum generators
-
 Mess around with external & internal style sheets
 	If the properties only apply to one page, it should be internal
 
-Consider adding borders on all boxes. (How it is on the about us page)
+Add footer, filler, and logo to the photo pages.
