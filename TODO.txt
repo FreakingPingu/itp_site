@@ -20,3 +20,5 @@ Mess around with external & internal style sheets
 Add footer, filler, and logo to the photo pages.
 
 Improve mobile compatability with the footer
+
+Work on photos page so table displays properly
