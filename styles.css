@@ -120,6 +120,7 @@ body {
 /* Table style for general use */
 /* cellpadding */
 tr td {
+	border: medium black solid;
     padding-left: 30px;
     padding-top: 10px;
     padding-right: 30px;
@@ -165,8 +166,9 @@ table tr td:hover a.juniorOrSenior{
 /* Modified table style for chapters & textbooks */
 td.chapter {
     vertical-align: middle;
-    min-width: 200px;
-    max-width: 200px;
+	border: medium black solid;
+    min-width: 230px;
+    max-width: 230px;
 }
 
 
@@ -183,19 +185,6 @@ td.chapter {
 /* qna list items */
 ol {
 	text-align: left;
-}
-
-.question {
-	max-width: 30em;
-	margin-left: 22%;
-	float: none
-}
-
-.answer {
-	width: 50%;
-	margin-left: 25%;
-	float: none;
-	border:
 }
 
 
