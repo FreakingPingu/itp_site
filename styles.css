@@ -7,6 +7,7 @@ ul {
     margin-bottom: 5em;
 	margin-top: 0em;
     padding: 0em;
+	padding-bottom: -1px;
 }
 
 li {
@@ -16,6 +17,7 @@ li {
     color: white;
     padding: 20px 45px;
 	clear: right;
+	margin-bottom: -4px;
 }
 
 li a { /* Links are white without underlining in nav bar */
@@ -63,6 +65,11 @@ li a { /* Links are white without underlining in nav bar */
 .menu:hover .dropdown-content {
 	display: list-item;
 	margin: -1px;
+}
+
+.middle img{
+	display: none;
+	float: left;
 }
 } /* End of <=1650 nav bar */
 
@@ -151,18 +158,6 @@ table {
     margin-bottom: 10%;
 }
 
-/* hover menu show, used for photos. */
-table tr td a.juniorOrSenior{
-	color: #c3c3c3;
-	text-decoration: none;
-}
-
-table tr td:hover a.juniorOrSenior{
-	color: black;
-	text-decoration: underline;
-}
-
-
 /* Modified table style for chapters & textbooks */
 td.chapter {
     vertical-align: middle;
@@ -238,7 +233,6 @@ ol {
 /* the footer for the different pages */
 .footer {
 	position: absolute;
-	bottom: 0;
 	text-align: center;
 	margin-top: 1.3em;
 	margin-bottom: 0em;
@@ -255,10 +249,4 @@ ol {
 
 .middle p{
 	padding: .1%;
-}
-
-#slideshow {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
 }

@@ -5,8 +5,6 @@ Test contact.php form to see if it successfully sends the form as an email.
 	Send email from a localhost server
 		(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
 
-Main page scrolling pictures (think Mayfield homepage)
-
 Find a better way to create line breaks in FAQ.
 
 Responsive design with google calendar. (Mobile version for mobile devices)
@@ -14,11 +12,9 @@ Responsive design with google calendar. (Mobile version for mobile devices)
 Improve mobile formatting
 	Larger text on mobile
 
-Mess around with external & internal style sheets
-	If the properties only apply to one page, it should be internal
+Organize style sheet.
 
-Add footer, filler, and logo to the photo pages.
+Fix logo of the photo pages.
 
 Improve mobile compatability with the footer
-
-Work on photos page so table displays properly
+	- Half done
