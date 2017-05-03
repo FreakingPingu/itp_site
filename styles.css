@@ -144,19 +144,18 @@ td a {
 	text-align: center;
 }
 
-table {border-collapse: separate; border-spacing: 6.66em;} /* cellspacing */
-table {border-collapse: separate; border-spacing: 6.66em;}   /* cellspacing */
-
-/* valign */
-th, td {vertical-align: top;}
-
-/* align (center) */
 table {
-    margin-left: auto;
+	border-collapse: separate; 
+	border-spacing: 6.66em;
+	margin-left: auto;
     margin-top: .5%;
     margin-right: auto;
     margin-bottom: 10%;
-}
+} /* cellspacing */
+
+
+/* valign */
+th, td {vertical-align: top;}
 
 /* Modified table style for chapters & textbooks */
 td.chapter {
