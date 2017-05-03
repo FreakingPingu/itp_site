@@ -145,7 +145,7 @@ td a {
 }
 
 table {
-	border-collapse: separate; 
+	border-collapse: separate;
 	border-spacing: 6.66em;
 	margin-left: auto;
     margin-top: .5%;
@@ -190,7 +190,7 @@ ol {
 	margin: .1%;
 }
 
-.middle { /* also being used for footer. Line 263 (.middle p) is used b/c styling on about us broke the footer. TODO Condense seperate rules and make more logical */
+.middle { /* also being used for footer. Line 248 (.middle p) is used b/c styling on about us broke the footer. TODO Condense seperate rules and make more logical */
 	height: 95%;
 	border: medium black solid;
 	background-color: #c3c3c3;
