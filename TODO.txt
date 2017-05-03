@@ -18,3 +18,4 @@ Fix logo of the photo pages.
 
 Improve mobile compatability with the footer
 	- Half done
+
