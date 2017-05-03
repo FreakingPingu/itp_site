@@ -151,7 +151,7 @@ table {
     margin-top: .5%;
     margin-right: auto;
     margin-bottom: 10%;
-} /* cellspacing */
+}
 
 
 /* valign */
@@ -164,7 +164,6 @@ td.chapter {
     min-width: 230px;
     max-width: 230px;
 }
-
 
 /* calendar test*/
 .calendar {
