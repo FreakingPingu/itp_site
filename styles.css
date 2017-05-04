@@ -47,6 +47,7 @@ ul {
 
 li { /* Hide old nav bar elements so menu appears */
     display: none;
+	float: left;
 }
 
 .menu { /* Menu class */
@@ -63,6 +64,8 @@ li a { /* Links are white without underlining in nav bar */
 }
 
 .menu:hover .dropdown-content {
+	float: left;
+	position: absolute;
 	display: list-item;
 	margin: -1px;
 }
@@ -199,7 +202,8 @@ ol {
 	margin-right: auto;
 	text-align: center;
 	float: none;
-	line-height: 1em;
+	line-height: .8em;
+	min-width: 7em;
 }
 
 .rightside{
@@ -238,7 +242,7 @@ ol {
 	margin-right: auto;
 	background-color: #55595c;
 	width: 99%;
-	height: 7em;
+	height: 7.4em;
 }
 
 .middle img{
