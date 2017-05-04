@@ -43,11 +43,11 @@ ul {
     margin-bottom: 5em;
 	margin-top: 0em;
     padding: 0em;
+
 }
 
 li { /* Hide old nav bar elements so menu appears */
     display: none;
-	float: left;
 }
 
 .menu { /* Menu class */
@@ -64,7 +64,6 @@ li a { /* Links are white without underlining in nav bar */
 }
 
 .menu:hover .dropdown-content {
-	float: left;
 	position: absolute;
 	display: list-item;
 	margin: -1px;
@@ -74,10 +73,11 @@ li a { /* Links are white without underlining in nav bar */
 	display: none;
 	float: left;
 }
+
 } /* End of <=1650 nav bar */
 
 .image { /* Logo blends in with the background */
-    float: left;
+	float: left;
 	margin-top: 0em;
 	margin-left: 0em;
 	margin-right: 1%;
@@ -101,7 +101,8 @@ body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 14em;
+	width: 20%;
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.6);
 	margin-top: 3.7%;
     margin-left: 2.2%;
