@@ -1,6 +1,6 @@
 Last Updated 3/22 @ 8:00
 
-Test contact.php form to see if it successfully sends the form as an email.
+Test contact.html form to see if it successfully sends the form as an email.
 	PHP code should not allow the user to send multiple emails.
 	Send email from a localhost server
 		(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
@@ -18,4 +18,3 @@ Fix logo of the photo pages.
 
 Improve mobile compatability with the footer
 	- Half done
-

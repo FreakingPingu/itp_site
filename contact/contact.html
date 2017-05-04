@@ -1,20 +1,3 @@
-<?php
-if($_POST["submit"]) {
-    $recipient="masterricky3333@gmail.com";
-    $subject="Request for Information";
-    $senderFirst=$_POST["SenderFirstName"];
-    $senderLast=$_POST["SenderLastName"];
-    $senderEmail=$_POST["SenderEmail"];
-    $message=$_POST["SenderInfoReason"];
-
-    $mailBody="Name: $senderFirst $senderLast\nEmail: $senderEmail\n\n$message"; // Creates the message itself, with newline characters
-
-    mail($recipient, $subject, $mailBody, "From: itp.info.request@excellitp.com"); // Sends it to master..., appearings to come from itp.info...
-
-    $confirmedSent="<p> Your request was received. Please allow several days for a response. </p>"; // New paragraph appears under submit button telling user it was received.
-}
-?>
-
 <!DOCTYPE HTML>
 
 <html>
@@ -32,18 +15,32 @@ if($_POST["submit"]) {
                 padding: 2%;
             }
 
-            label {
-                    display: block;
-                    margin: 2em;
-            }
-        </style>
+			form * {
+				display: block;
+				margin: 1.5em;
+			}
 
+			textarea {
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			form p#confirm {
+				color: transparent;
+			}
+
+			h1 {
+				text-align: center;
+
+			}
+        </style>
     </head>
 
     <body>
 
 		<div class = image>
-        	<img src = "assets/ITP_LOGO.png" alt = "ITP logo" height = "81" width = "144">
+        	<img src = "../assets/ITP_LOGO.png" alt = "ITP logo" height = "81" width = "144">
         </div>
 
         <ul> <!-- Nav bar menu -->
@@ -57,14 +54,14 @@ if($_POST["submit"]) {
                 	<a href = "../faq/faq.html"> FAQ </a>
                     <a href = "../faq/faq.html"> Recruitment Information </a>
                     <a href = "../about/about.html"> About Us </a>
-                    <a href = "../contact/contact.php"> Contact Us </a>
+                    <a href = "../contact/contact.html"> Contact Us </a>
                	</div>
             </div>
             <div class = "dropdown">
             	<li> External Links </li>
                 <div class = "dropdown-content">
                 	<a href = "http://www.skillsusa.org/" target = "_blank"> Skills USA </a>
-                    <a href = "#" target = "_blank"> College Credit & Scholaarships </a>
+                    <a href = "#" target = "_blank"> College Credit & Scholarships </a>
                 </div>
             </div>
 			<li class = "menu">
@@ -77,21 +74,23 @@ if($_POST["submit"]) {
                     <a href = "../faq/faq.html"> FAQ </a>
                     <a href = "../faq/faq.html"> Recruitment Information </a>
                     <a href = "../about/about.html"> About Us </a>
-                    <a href = "../contact/contact.php"> Contact Us </a>
+                    <a href = "../contact/contact.html"> Contact Us </a>
                     <a href = "http://www.skillsusa.org/" target = "_blank"> Skills USA </a>
-                    <a href = "#" target = "_blank"> College Credit & Scholaarships </a>
+                    <a href = "#" target = "_blank"> College Credit & Scholarships </a>
                 </div>
             </li>
         </ul>
 
-        <form name="form" action="contact.php" method="post" > <!-- User submitted form for an information request. Calls the PHP code at the start of the file. -->
+        <form name="form" method="post" action="mailto:rsuchy@mayfieldschools.org" enctype="text/plain"> <!-- User submitted form for an information request. -->
             <h1> Request for Information </h1>
-            <label> First Name:<input type="text" name="SenderFirstName" /></label>
-            <label> Last Name:<input type="text" name="SenderLastName" /></label>
-            <label> Email:<input type="text" name="SenderEmail" /></label>
-            <textarea name="SenderInfoReason" rows="7" cols="60"></textarea>
+            <label> First Name:<br><input type="text" name="FirstName" /></label>
+            <label> Last Name:<br><input type="text" name="LastName" /></label>
+            <label> Email:<br><input type="text" name="Email" /></label>
+			<p>What information would you like to receive and why?</p>
+            <textarea name="RequestReason" rows="7"></textarea><br>
             <input type="submit" name="submit"/>
-            <?=confirmedSent ?> <!-- Hidden paragraph that will appear when the user submits the form, using PHP code at start of file -->
+			<p id=confirm> Request Received. Please allow 2-3 days for a response. </p>
+			<!-- Need javascript action here that confirms the form was sent. (Change p color to black). Executes when they click submit -->
         </form>
 
     </body>
