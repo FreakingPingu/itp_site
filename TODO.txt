@@ -1,20 +1,5 @@
 Last Updated 3/22 @ 8:00
 
-Test contact.html form to see if it successfully sends the form as an email.
-	PHP code should not allow the user to send multiple emails.
-	Send email from a localhost server
-		(Advice https://stackoverflow.com/questions/22396721/how-to-send-email-from-localhost-wamp-server-to-send-email-gmail-hotmail-or-so-f)
-
-Find a better way to create line breaks in FAQ.
-
-Responsive design with google calendar. (Mobile version for mobile devices)
-
-Improve mobile formatting
-	Larger text on mobile
-
-Organize style sheet.
-
-Fix logo of the photo pages.
-
-Improve mobile compatability with the footer
+Improve mobile compatability
 	- Half done
+
