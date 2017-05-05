@@ -30,6 +30,7 @@
 			var index = 0;
 			var n = 1;
 			var images = [];
+			var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 			images[0] = "assets/slideshow/filler3.png";
 			images[1] = "assets/slideshow/filler2.jpg";
@@ -38,15 +39,19 @@
 			images[4] = "assets/slideshow/filler5.gif";
 
 			function slideShow(n){
-				if(index > images.length - 1) {
-					index = 0;
-				}
-				if(n < 0){
-					i = images.lenght - 1;
-				}
+				if (screenWidth <= 1650) {
+					document.getElementById("slideshow").src = "assets/slideshow/filler3.png";
+				} else {
+					if(index > images.length - 1) {
+						index = 0;
+					}
+					if(n < 0){
+						i = images.lenght - 1;
+					}
 
-				document.getElementById("slideshow").src = images[index];
-				setTimeout("slideShow(index += 1)", 5000);
+					document.getElementById("slideshow").src = images[index];
+					setTimeout("slideShow(index += 1)", 5000);
+				}
 			}
 
 			window.onload = slideShow;
@@ -112,7 +117,7 @@
             7) updating calendar on google updates it on itp site
         -->
         <div class = "calendar">
-        	<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=b6nj7ov1rphqqjpugn04vgobm8%40group.calendar.google.com&amp;color=%23522					9A3&amp;ctz=America%2FNew_York" style="border-width:0" width="50%" height="700em" frameborder="0" scrolling="no"></iframe>
+        	<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=b6nj7ov1rphqqjpugn04vgobm8%40group.calendar.google.com&amp;color=%23522					9A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600em" frameborder="0" scrolling="no"></iframe>
 		</div>
 
 	<div class = "footer"> <!--the footer of the different pages-->

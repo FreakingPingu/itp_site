@@ -69,9 +69,13 @@ li a { /* Links are white without underlining in nav bar */
 	margin: -1px;
 }
 
-.middle img{
+.middle img {
 	display: none;
 	float: left;
+}
+
+.chaptercontainer {
+	border-collapse: collapse;
 }
 
 } /* End of <=1650 nav bar */
