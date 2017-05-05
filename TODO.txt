@@ -3,3 +3,4 @@ Last Updated 3/22 @ 8:00
 Improve mobile compatability
 	- Half done
 
+Javascript on contact.html page that confirms to the user their request was received
