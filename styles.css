@@ -78,6 +78,9 @@ li a { /* Links are white without underlining in nav bar */
 	border-collapse: collapse;
 }
 
+.footer {
+	bottom: 0;
+}
 } /* End of <=1650 nav bar */
 
 .image { /* Logo blends in with the background */
@@ -173,16 +176,6 @@ td.chapter {
 	height: 65px;
 }
 
-/* calendar test*/
-.calendar {
-	margin-left: 0em;
-	margin-right: 0em;
-	text-align: center;
-	margin-top: 5em;
-	min-width: 1000px;
-}
-
-
 /* qna list items */
 ol {
 	text-align: left;
@@ -256,4 +249,14 @@ ol {
 
 .middle p{
 	padding: .1%;
+}
+
+.calendar{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#calendar{
+	max-width: 70em;
 }
