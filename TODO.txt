@@ -4,3 +4,7 @@ Improve mobile compatability
 	- Half done
 
 Javascript on contact.html page that confirms to the user their request was received
+
+footer on contact page
+
+

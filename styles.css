@@ -78,8 +78,8 @@ li a { /* Links are white without underlining in nav bar */
 	border-collapse: collapse;
 }
 
-.footer {
-	bottom: 0;
+table {
+	border-spacing: 3em!important;
 }
 } /* End of <=1650 nav bar */
 
