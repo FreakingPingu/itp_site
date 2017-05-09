@@ -4,3 +4,9 @@ Improve mobile compatability
 	- Half done
 
 Javascript on contact.html page that confirms to the user their request was received
+
+Clear button on contact.html
+
+Find absolute solution to footer, always be on bottom regardless of resolution and other elements
+
+Mobile drop down menu, text is compressed and looks ugly.
