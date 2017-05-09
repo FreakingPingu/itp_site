@@ -7,4 +7,8 @@ Javascript on contact.html page that confirms to the user their request was rece
 
 footer on contact page
 
+Find absolute solution to footer, always be on bottom regardless of resolution and other elements
 
+Clear button on contact.html
+
+Mobile drop down menu, text is compressed and looks ugly.
