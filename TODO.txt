@@ -1,7 +1,14 @@
 Last Updated 3/22 @ 8:00
 
+Improve mobile compatability
+	- Half done
+
 Javascript on contact.html page that confirms to the user their request was received
 
-fix the footer on the contact page - it is really broken.
+footer on contact page
+
+Find absolute solution to footer, always be on bottom regardless of resolution and other elements
 
 Clear button on contact.html
+
+Mobile drop down menu, text is compressed and looks ugly.
