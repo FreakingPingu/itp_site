@@ -42,8 +42,6 @@ ul {
     list-style-type: none;
     margin-bottom: 5em;
 	margin-top: 0em;
-    padding: 0em;
-
 }
 
 li { /* Hide old nav bar elements so menu appears */
@@ -53,7 +51,8 @@ li { /* Hide old nav bar elements so menu appears */
 .menu { /* Menu class */
 	display: inline-block;
 	float: left; /* Appears on right side of nav bar */
-	margin: .5em;
+	margin: .39em;
+	margin-left: -2em;
 }
 
 li a { /* Links are white without underlining in nav bar */
@@ -241,6 +240,10 @@ ol {
 	background-color: #55595c;
 	width: 99%;
 	height: 7.4em;
+}
+
+.dropdown-content a {
+	line-height: 1em;
 }
 
 .middle img{

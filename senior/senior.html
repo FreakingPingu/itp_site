@@ -7,16 +7,13 @@
         <title> Senior </title>
         <link href="../styles.css" rel="stylesheet" type="text/css" />
         
-        <script>
-        	var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-			
-			function mobileChange() {
-				if (screenWidth <= 1650) {
-					document.getElementById("calendar").width = screenWidth;
+        <style>
+			@media only screen and (max-width: 1650px) {
+				.footer {
+					bottom: 0;
 				}
 			}
-			window.onload = moblieChange;
-		</script>
+		</style>
     </head>
 
     <body>
