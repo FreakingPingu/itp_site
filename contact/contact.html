@@ -51,6 +51,17 @@
 				text-align: center;
 			}
         </style>
+        
+        <script>
+			var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+			
+			function fixFooter(screenWidth) {
+				if (screenWidth <= 520) {
+					document.getElementById("test").bottom = 0;
+				}
+			}
+			window.onload = fixfooter();
+		</script>
     </head>
 
     <body>
