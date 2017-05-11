@@ -50,19 +50,24 @@
 				font-size: 1.5em;
 				text-align: center;
 			}
+        </style>
+        
+        <script>
+			var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 			
-			@media only screen and (max-width: 1650px) {
-				.footer {
-					bottom: 0!important;
+			function fixFooter(screenWidth) {
+				if (screenWidth <= 520) {
+					document.getElementById("test").bottom = 0;
 				}
 			}
-        </style>
+			window.onload = fixfooter();
+		</script>
     </head>
 
     <body>
 
 		<div class = image>
-        	<img id = "logo" src = "../assets/ITP_LOGO.png" alt = "ITP logo" height = "77" width = "144">
+        	<img src = "../assets/ITP_LOGO.png" alt = "ITP logo" height = "77" width = "144">
         </div>
 
         <ul> <!-- Nav bar menu -->
@@ -121,14 +126,14 @@
 			<!-- Need javascript action here that confirms the form was sent. (Change p color to black). Executes when they click submit -->
         </form>
 
-		<div class = "footer">
-    		<div class = "middle">
-        		<img src = "../assets/suchy_photo.jpg" alt = "Mr. Suchy" height = "105" width = "78">
-        		<p> Ron Suchy </p>
-            	<p> Program Instructor </p>
-            	<a href = "contact/contact.html"> Contact Info </a>
-        	</div>
-    	</div>
+		<div class = "footer"> <!--the footer of the different pages-->
+	    	<div class = "middle">
+	        	<img src = "../assets/suchy_photo.jpg" alt = "Mr. Suchy" height = "105" width = "78">
+	        	<p> Ron Suchy </p>
+	            <p> Program Instructor </p>
+	            <a href = "contact/contact.html"> Contact Info </a>
+	        </div>
+	    </div>
 
     </body>
 
