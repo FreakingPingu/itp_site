@@ -53,7 +53,7 @@ li { /* Hide old nav bar elements so menu appears */
 .menu { /* Menu class */
 	display: inline-block;
 	float: left; /* Appears on right side of nav bar */
-	margin: .5em;
+	margin: .39em;
 }
 
 li a { /* Links are white without underlining in nav bar */
