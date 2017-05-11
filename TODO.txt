@@ -5,3 +5,7 @@ Javascript on contact.html page that confirms to the user their request was rece
 fix the footer on the contact page - it is really broken.
 
 Clear button on contact.html
+
+Make sure all footers are in place (pwd, pld, and java)
+
+Footer link fixing, make sure no dead links
