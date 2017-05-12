@@ -6,7 +6,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> ITP Home </title>
-        <link href="./styles.css" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
 
         <style>
 			#slideshow {
@@ -15,7 +15,7 @@
 				margin-left: auto;
 			}
 
-			.footer { /* Bandaid fix for footer not properly going to the bottom of the page. */
+			.footer { /* Fix for footer not properly going to the bottom of the page. */
 				position: relative;
 			}
 
@@ -26,20 +26,21 @@
 			}
 		</style>
 
-       <script>
+       <script> // Slide show on the index page.
 			var index = 0;
-			var n = 1;
+			var n = 1; // Counter
+			var time = 5000; // Time in milliseconds between images. Can't be const b/c of IE 8, 9, & 10.
 			var images = [];
 			var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-			images[0] = "assets/slideshow/filler3.png";
+			images[0] = "assets/slideshow/filler3.png"; // Add and remove images here
 			images[1] = "assets/slideshow/filler2.jpg";
 			images[2] = "assets/slideshow/filler1.jpg";
 			images[3] = "assets/slideshow/filler4.jpg";
 			images[4] = "assets/slideshow/filler5.gif";
 
 			function slideShow(n){
-				if (screenWidth <= 935) {
+				if (screenWidth <= 935) { // Smaller images for smaller screens
 					document.getElementById("slideshow").src = "assets/slideshow/filler3.png";
 					document.getElementById("slideshow").height = "150";
 					document.getElementById("slideshow").width = "240";
@@ -47,12 +48,9 @@
 					if(index > images.length - 1) {
 						index = 0;
 					}
-					if(n < 0){
-						i = images.lenght - 1;
-					}
 
 					document.getElementById("slideshow").src = images[index];
-					setTimeout("slideShow(index += 1)", 5000);
+					setTimeout("slideShow(index += 1)", time); // Change 5000 to desired time, in milliseconds
 				}
 			}
 
@@ -116,9 +114,10 @@
             4) go to "Embed This Calendar"
             5) if needed, customize calendar to suit your needs
             6) copy html code and paste it in the div below
-            7) updating calendar on google updates it on itp site
+            7) then change the width for the calendar to 100%
+            8) updating calendar on google updates it on itp site
         -->
-        <div class = "calendar">
+        <div class = "calendar"> <!-- Google Calendar -->
         	<iframe id = "calendar" src="https://calendar.google.com/calendar/embed?src=b6nj7ov1rphqqjpugn04vgobm8%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 		</div>
 
