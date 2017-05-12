@@ -11,4 +11,8 @@ Find absolute solution to footer, always be on bottom regardless of resolution a
 
 Clear button on contact.html
 
+Make sure all footers are in place (pwd, pld, and java)
+
+Footer link fixing, make sure no dead links
+
 Mobile drop down menu, text is compressed and looks ugly.
