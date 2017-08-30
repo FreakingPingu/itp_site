@@ -1,4 +1,261 @@
+/* Navigation bar for 1920x1080 displays */
+@media only screen and (min-width: 1651px) {
+ul {
+    overflow: hidden;
+    background-color: #55595c;
+    list-style-type: none;
+    margin-bottom: 5em;
+	margin-top: 0em;
+    padding: 0em;
+	padding-bottom: -1px;
+}
+
+li {
+    float: left;
+    display: block;
+	font-size: 2em;
+    color: white;
+    padding: 20px 45px;
+	clear: right;
+	margin-bottom: -4px;
+}
+
+li a { /* Links are white without underlining in nav bar */
+    color: #ffffff;
+	text-decoration: none;
+}
+
+div div a { /* Links are white without underlining in nav bar */
+    color: #000000;
+}
+
+.menu { /* Dropdown menu hidden if screen can fit the full-size navbar. */
+	display: none;
+}
+} /* End of >=1920 nav bar */
+
+/* Navigation bar for anything smaller than 1920x1080 */
+@media only screen and (max-width: 1650px) {
+ul {
+    overflow: hidden;
+    background-color: #55595c;
+    list-style-type: none;
+    margin-bottom: 5em;
+	margin-top: 0em;
+    padding: 0em;
+
+}
+
+li { /* Hide old nav bar elements so menu appears */
+    display: none;
+}
+
+.menu { /* Menu class */
+	display: inline-block;
+	float: left; /* Appears on right side of nav bar */
+	margin: .39em;
+}
+
+li a { /* Links are white without underlining in nav bar */
+	line-height: 65px;
+    color: white;
+	font-size: 3.3em;
+    text-decoration: none;
+}
+
+.menu:hover .dropdown-content {
+	position: absolute;
+	display: list-item;
+	margin: -1px;
+}
+
+.middle img {
+	display: none;
+}
+
+.chaptercontainer {
+	border-collapse: collapse;
+}
+
+table {
+	border-spacing: 3em!important;
+}
+} /* End of <=1650 nav bar */
+
+.image { /* Logo blends in with the background */
+	float: left;
+	margin-top: 0em;
+	margin-left: 0em;
+	margin-right: 1%;
+}
+
+
+/* Background color */
 body {
-    background: #36393e;
+    background: #36393e; /*Alternative color scheme */
     background: linear-gradient(to right, #36393e 0%, #36393e 19%, #6d2f61 20%, #6d2f61 80%, #36393e 81%, #36393e 100%);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* Dropdown content */
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 14em;
+	width: 20%;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.6);
+	margin-top: 3.7%;
+    margin-left: 2.2%;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1em 1.6em;
+    text-decoration: none;
+    display: block;
+	font-size: 1.2em;
+	line-height: .7em;
+}
+
+.dropdown-content a:hover {
+	background-color: #55595c;
+	color: #c3c3c3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Table style for general use */
+/* cellpadding */
+tr td {
+	border: medium black solid;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    color: black;
+    background-color: #c3c3c3;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+td a {
+    color: black;
+    background-color: #c3c3c3;
+	text-align: center;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 6.66em;
+	margin-left: auto;
+    margin-top: .5%;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+
+/* valign */
+th, td {vertical-align: top;}
+
+/* Modified table style for chapters & textbooks */
+td.chapter {
+    vertical-align: middle;
+	border: medium black solid;
+    width: 230px;
+	height: 65px;
+}
+
+/* qna list items */
+ol {
+	text-align: left;
+}
+
+
+/*the about us page*/
+.leftside{
+	border: medium black solid;
+	background-color: #c3c3c3;
+	width: 48%;
+	float: left;
+	margin: .1%;
+}
+
+.middle { /* also being used for footer. Line 248 (.middle p) is used b/c styling on about us broke the footer. TODO Condense seperate rules and make more logical */
+	height: 95%;
+	border: medium black solid;
+	background-color: #c3c3c3;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	float: none;
+	line-height: .8em;
+	min-width: 7em;
+}
+
+.rightside{
+	border: medium black solid;
+	background-color: #c3c3c3;
+	width: 48%;
+	float: right;
+	margin: .1%;
+}
+
+#title{
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#description{
+	text-align: left;
+	font-size: 1.1em;
+	background-color: #c3c3c3;
+	line-height: 2em;
+}
+
+.highlightme{
+	background-color: #c3c3c3;
+}
+
+
+/* the footer for the different pages */
+.footer {
+	position: absolute;
+	text-align: center;
+	margin-top: 1.3em;
+	margin-bottom: 0em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #55595c;
+	width: 99%;
+	height: 7.4em;
+}
+
+.middle img{
+	float: left;
+}
+
+.middle p{
+	padding: .1%;
+}
+
+.calendar{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#calendar{
+	max-width: 70em;
 }

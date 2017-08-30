@@ -3,11 +3,132 @@
 <html>
 
     <head>
-        <title>Excel TECC ITP</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ITP Home </title>
         <link href="styles.css" rel="stylesheet" type="text/css" />
+
+        <style>
+			#slideshow {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.footer { /* Fix for footer not properly going to the bottom of the page. */
+				position: relative;
+			}
+
+			#slidecontainer {
+				width: 100%;
+				height: 50%;
+				margin-bottom: 6em;
+			}
+		</style>
+
+       <script> // Slide show on the index page.
+			var index = 0;
+			var n = 1; // Counter
+			var time = 5000; // Time in milliseconds between images. Can't be const b/c of IE 8, 9, & 10.
+			var images = [];
+			var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+			images[0] = "assets/slideshow/filler3.png"; // Add and remove images here
+			images[1] = "assets/slideshow/filler2.jpg";
+			images[2] = "assets/slideshow/filler1.jpg";
+			images[3] = "assets/slideshow/filler4.jpg";
+			images[4] = "assets/slideshow/filler5.gif";
+
+			function slideShow(n){
+				if (screenWidth <= 935) { // Smaller images for smaller screens
+					document.getElementById("slideshow").src = "assets/slideshow/filler3.png";
+					document.getElementById("slideshow").height = "150";
+					document.getElementById("slideshow").width = "240";
+				} else {
+					if(index > images.length - 1) {
+						index = 0;
+					}
+
+					document.getElementById("slideshow").src = images[index];
+					setTimeout("slideShow(index += 1)", time); // Change 5000 to desired time, in milliseconds
+				}
+			}
+
+			window.onload = slideShow;
+		</script>
+
     </head>
 
     <body>
+
+    	<div class = image>
+        	<img src = "assets/ITP_LOGO.png" alt = "ITP logo" height = "77" width = "144"> <!--location of the logo for nav bar-->
+        </div>
+
+        <ul> <!-- Nav bar menu -->
+            <li style = "background-color: #c3c3c3"><a href = "index.html"> Home </a></li>
+            <li><a href = "senior/senior.html"> Senior </a></li>
+            <li><a href = "junior/junior.html"> Junior </a></li>
+            <li><a href = "photos/photos.html"> Photos </a></li>
+            <div class = "dropdown">
+            	<li> Questions and Concerns </li>
+                <div class = "dropdown-content">
+                	<a href = "faq/faq.html"> FAQ </a>
+                    <a href = "faq/faq.html"> Recruitment Information </a>
+                    <a href = "about/about.html"> About Us </a>
+                    <a href = "contact/contact.html"> Contact Us </a>
+               	</div>
+            </div>
+            <div class = "dropdown">
+            	<li> External Links </li>
+                <div class = "dropdown-content">
+                	<a href = "http://www.skillsusa.org/" target = "_blank"> Skills USA </a>
+                    <a href = "#" target = "_blank"> College Credit & Scholarships </a>
+                </div>
+            </div>
+			<li class = "menu">
+            	<a href="#menu"> &#9776;</a>
+                <div class = "dropdown-content" style = "float: left;">
+                	<a href = "index.html"> Home </a>
+                    <a href = "senior/senior.html"> Senior </a>
+                    <a href = "junior/junior.html"> Junior </a>
+                    <a href = "photos/photos.html"> Photos </a>
+                    <a href = "faq/faq.html"> FAQ </a>
+                    <a href = "faq/faq.html"> Recruitment Information </a>
+                    <a href = "about/about.html"> About Us </a>
+                    <a href = "contact/contact.html"> Contact Us </a>
+                    <a href = "http://www.skillsusa.org/" target = "_blank"> Skills USA </a>
+                    <a href = "#" target = "_blank"> College Credit & Scholarships </a>
+                </div>
+            </li>
+        </ul>
+
+        <div id = "slidecontainer"><!-- contains the slide show, set the size of photos-->
+        	<img id = "slideshow" src = "assets/slideshow/filler3.png" alt = "filler">
+        </div>
+
+        <!--
+        	1) create google calendar
+        	2) go to that calendar's settings
+            3) make sure calendar is public
+            4) go to "Embed This Calendar"
+            5) if needed, customize calendar to suit your needs
+            6) copy html code and paste it in the div below
+            7) then change the width for the calendar to 100%
+            8) updating calendar on google updates it on itp site
+        -->
+        <div class = "calendar"> <!-- Google Calendar -->
+        	<iframe id = "calendar" src="https://calendar.google.com/calendar/embed?src=b6nj7ov1rphqqjpugn04vgobm8%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+	<div class = "footer"> <!--the footer of the different pages-->
+    	<div class = "middle">
+        	<img src = "assets/suchy_photo.jpg" alt = "Mr. Suchy" height = "105" width = "78">
+        	<p> Ron Suchy </p>
+            <p> Program Instructor </p>
+            <a href = "contact/contact.html"> Contact Info </a>
+        </div>
+    </div>
 
     </body>
 
